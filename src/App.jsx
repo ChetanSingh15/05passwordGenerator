@@ -29,7 +29,7 @@ function App() {
 
   const copyPasswordToclipboard = useCallback(()=>{
     passwordRef.current?.select()
-    //passwordRef.current?.setSelectionRange(0,6) For selecting for which range I want pasword to not working completely for me
+    // passwordRef.current?.setSelectionRange(0,6) For selecting for which range I want pasword to not working completely for me
     window.navigator.clipboard.writeText(password)
   },[password])
 
